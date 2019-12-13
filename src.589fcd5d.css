@@ -1,0 +1,166 @@
+#notifications {
+    font-size: 1.4em;
+    position: fixed;
+    top: 90px;
+    left: 32px
+}
+
+@media (min-width:800px) {
+    #notifications {
+        font-size: 1em;
+        top: unset;
+        left: unset;
+        bottom: 32px;
+        right: 32px
+    }
+}
+
+#notifications > div {
+    display: block;
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 2s
+}
+
+#notifications > div.fade-out {
+    position: relative;
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 32px
+    }
+
+    to {
+        opacity: 1;
+        top: 0
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top: 0
+    }
+
+    to {
+        opacity: 0;
+        top: -32px
+    }
+}
+
+.gallery {
+    position: relative;
+    margin: 96px 32px 0;
+    overflow-y: auto;
+    height: calc(100% - 128px);
+    box-sizing: border-box
+}
+
+@media (min-width:800px) {
+    .gallery {
+        margin: 128px 128px;
+    }
+}
+
+.gallery:after {
+    pointer-events: none;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 128px;
+    /* background: linear-gradient(180deg, transparent, var(--background-color)) */
+}
+
+.gallery__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .03em;
+    padding-bottom: 1.5rem;
+}
+
+.gallery__list {
+    display: grid;
+    gap: 64px;
+    padding-bottom: 128px;
+    grid-template-columns: 1fr
+}
+
+@media (min-width:800px) {
+    .gallery__list {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media (min-width:1200px) {
+    .gallery__list {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+@media (min-width:1400px) {
+    .gallery__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    }
+}
+
+@media (min-width:1800px) {
+    .gallery__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    }
+}
+
+.gallery__item {
+    list-style: none;
+    border: 1px solid var(--primary-color);
+    width: 256px;
+    height: 256px
+}
+
+.gallery__item > a:focus-within {
+    outline: 4px solid var(--primary-color);
+    line-height: 0
+}
+
+.gallery__item canvas {
+    width: 100%;
+    height: 100%
+}
+
+.settings {
+    background: var(--background-color);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    height: 100%
+}
+
+@media (min-width:1000px) {
+    .settings {
+        width: 60vw;
+        height: 70vh;
+        max-width: 1000px;
+        max-height: 600px
+    }
+}
+
+.settings .btn {
+    display: inline-block;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color)
+}
+
+.settings .btn:focus {
+    outline: solid 4px var(--primary-color)
+}
+
+#output {
+    border: 1px solid var(--primary-color)
+}
+
+/*# sourceMappingURL=src.589fcd5d.css.map */
