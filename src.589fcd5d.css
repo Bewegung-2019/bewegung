@@ -19,13 +19,13 @@
     display: block;
     position: relative;
     animation-name: fadeIn;
-    animation-duration: 2s
+    animation-duration: 1.5s;
 }
 
 #notifications > div.fade-out {
     position: relative;
     animation-name: fadeOut;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards
 }
 
