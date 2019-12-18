@@ -11,14 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("p").hide();
+            $("#olympus").hide();
             $("#button-info").click(function () {
-                $("#info-text").slideToggle();
+                $("#olympus").slideToggle();
             });
         });
         
         $(document).ready(function () {
             $('#button-info').delay(46000).fadeIn(500);
+        });
+        
+        $(document).ready(function () {
+            $('#quote').delay(15000).fadeOut(500);
         });
     </script>
 </head>
@@ -38,10 +42,7 @@
             <label>
                 <input type="checkbox" checked=""> Dunkler Modus </label>
         </div> <a href="#gallery" class="btn">Zur Galerie</a> <a href="#editor" class="btn">Muster erzeugen</a> </div>
-    <div class="info">
-        <p> Experimentieren Sie mit den Linien,
-            <br> um Bewegungen zu erzeugen.</p>
-    </div>
+
     <canvas id="canvas" class="hide" width="1" height="1"></canvas>
     <canvas id="output" class="hide" width="1400" height="1400"></canvas>
     <div id="actions">
@@ -51,7 +52,7 @@
         <a id="button-download" href="" class="hide" draggable="false"><img alt="Bild herunterladen" src="download.4a1132e9.svg"> </a>
     </div>
     <div id="infostyle">
-        <p id="info-text">Wische über die Kreise, um Bewegungen zu erzeugen.
+        <p id="olympus">Wische über die Kreise, um Bewegungen zu erzeugen.
             <br>
             <br> Halte den Foto-Button, um die Animation zu verlangsamen.
             <br>
@@ -64,11 +65,17 @@
             <p> Be|we|gung [die, Sbst., fem.]
                 <br> </p>
         </div>
-        <p>Die Metamorphose im Außen
-            <br> um experimentell Formen zu erzeugen,
-            <br> die zu neuer Erkenntnis führen und
-            <br> nachweislich verantwortlich sind.
-            <br>
+            <p>
+                <br> Funktion des Denkapparates,
+                <br> Veränderung der inneren Haltung
+                <br> oder Metamorphose im Außen,
+                <br> auch durch physische (Inter-)Aktion,
+                <br> um experimentell Formen zu
+                <br> erzeugen, die zu neuer Erkenntnis
+                <br> führen und nachweislich verantwortlich
+                <br> sind für die Umsetzung
+                <br> von Visionen und dem Erschaffen
+                <br> kreativer Denkmodelle.
             <br> </p>
     </div>
     <script src="src.0ae4d4fb.js"></script>
