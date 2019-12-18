@@ -19,6 +19,12 @@ html {
     letter-spacing: 0.03em;
 }
 
+h1 {
+    font-size: 1.15rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.03em;
+}
+
 svg {
     fill: var(--primary-color)
 }
