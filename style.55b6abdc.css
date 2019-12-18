@@ -21,8 +21,8 @@ html {
 
 h1 {
     font-size: 1.15rem;
-    line-height: 1.7rem;
     letter-spacing: 0.03em;
+    font-weight: 700;
 }
 
 svg {
@@ -108,7 +108,7 @@ svg {
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 @media (min-width:1000px) {
